@@ -30,7 +30,7 @@ flowchart TD
 
 ## Environment
 
-Set up a fresh Python 3.11.3 virtual environment before running the notebooks. The notebooks use local CSV files and standard-library Python code, so no package installation or external API keys are required.
+Set up a fresh Python 3.11.3 virtual environment before running the notebooks. The notebooks use local CSV files and standard-library Python code, but require a local Jupyter runtime installed from `requirements.txt`. No external API keys are required.
 
 ### macOS
 
@@ -39,6 +39,7 @@ pyenv local 3.11.3
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ### Windows PowerShell
@@ -48,6 +49,7 @@ pyenv local 3.11.3
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ### Windows Git Bash
@@ -57,6 +59,7 @@ pyenv local 3.11.3
 python -m venv .venv
 source .venv/Scripts/activate
 python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ## Learning Objectives
@@ -69,3 +72,11 @@ By the end of this repository, you should be able to:
 - Compute local text embeddings and determine vector similarity using cosine similarity metrics.
 - Build a local semantic search pipeline over custom datasets.
 - Implement security validation and safety guardrails to evaluate retrieval reliability and mitigate hallucination, prompt injection, and bias.
+
+## References & Further Reading
+
+For a deeper dive into the conceptual and mathematical foundations of this unit, see these core resources:
+
+- **Transformer Architecture**: [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) - The foundational paper introducing self-attention.
+- **Subword Tokenization**: [Hugging Face Tokenizers Guide](https://huggingface.co/docs/tokenizers/index) - Explanations of modern subword algorithms (BPE, WordPiece).
+- **Vector Embeddings**: [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings) - Best practices for leveraging semantic high-dimensional vectors.
