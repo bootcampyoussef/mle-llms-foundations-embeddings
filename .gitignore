@@ -137,3 +137,9 @@ cython_debug/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# Visual Assets Source Files
+assets/*.drawio
+assets/*.psd
+assets/*.ai
+
