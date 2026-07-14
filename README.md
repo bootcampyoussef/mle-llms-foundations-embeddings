@@ -1,6 +1,6 @@
 # LLMs Foundations and Embeddings
 
-A hands-on introduction to the core mechanics of large language models and vector embeddings. You will build mental models for how LLMs generate text, implement token counting and cost estimation from scratch, compute semantic similarity with pure Python, and assemble a local semantic search pipeline without any external ML libraries.
+A hands-on introduction to the core mechanics of large language models and vector embeddings. You will build mental models for how LLMs generate text, implement token counting and cost estimation from scratch, compute similarity with pure Python, and assemble a local retrieval pipeline without any external ML libraries.
 
 ## Learning Objectives
 
@@ -10,8 +10,8 @@ By the end of this repository, you should be able to:
 - Explain decoding settings (temperature, top-p) and how they control generation diversity and randomness.
 - Count prompt tokens and estimate context-window usage and API consumption costs.
 - Compute local text embeddings and determine vector similarity using cosine similarity.
-- Build a local semantic search pipeline over custom datasets.
-- Implement confidence thresholds and safety guardrails to evaluate retrieval reliability and mitigate hallucination, prompt injection, and bias.
+- Build a local sparse retrieval pipeline over custom datasets and explain how it differs from dense semantic search.
+- Implement confidence thresholds to evaluate retrieval reliability and mitigate hallucination, prompt injection, and bias.
 
 ## Learning Path
 
@@ -20,9 +20,9 @@ By the end of this repository, you should be able to:
 | [**01 - LLM Foundations**](01-llm-foundations.ipynb) | Trace how next-token prediction, transformer blocks, context windows, and decoding settings influence generated text. |
 | [**02 - Tokenization and Cost**](02-tokenization-and-cost.ipynb) | Implement token counting algorithms, estimate API query costs, and plan prompt budgets. |
 | [**03 - Embeddings and Similarity**](03-embeddings-and-similarity.ipynb) | Build text vectors locally and compare semantic relatedness using cosine similarity. |
-| [**04 - Semantic Search Mini-Project**](04-semantic-search-mini-project.ipynb) | Retrieve top-k module candidates for user inquiries and implement confidence thresholds. |
+| [**04 - Local Retrieval Mini-Project**](04-local-retrieval-mini-project.ipynb) | Retrieve top-k module candidates with a transparent sparse index and implement confidence thresholds. |
 | [**05 - Limitations and Evaluation**](05-limitations-and-evaluation.ipynb) | Identify typical failure modes such as hallucination, bias, prompt injection, and retrieval errors. |
-| [**06 - Guided Support Router Exercise**](06-guided-support-router-exercise.ipynb) | Build an end-to-end support router combining token estimation, cost calculation, semantic retrieval, and risk thresholding. |
+| [**06 - Guided Support Router Exercise**](06-guided-support-router-exercise.ipynb) | Build an end-to-end support router combining token estimation, cost calculation, local retrieval, and risk thresholding. |
 
 ### Additional Folders and Files
 

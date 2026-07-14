@@ -55,7 +55,7 @@ llm_053,Safety Evaluation Cases,evaluation,"Explains adversarial and unsafe test
 llm_054,Human Feedback Loops,evaluation,"Explains how user feedback, support review, and annotation loops improve LLM applications over time."
 llm_055,Cost And Latency Monitoring,evaluation,"Explains tracking token usage, request cost, long-tail latency, and budget alerts for LLM-powered products."
 llm_056,Release Readiness For LLM Features,evaluation,"Covers final readiness checks: evaluation set results, fallback behavior, logging, monitoring, rollback plan, and owner review."
-llm_057,Support Router Project Overview,practice,"Introduces the support-routing exercise combining token count, cost estimate, semantic retrieval, confidence decision, and risk explanation."
+llm_057,Support Router Project Overview,practice,"Introduces the support-routing exercise combining token count, cost estimate, local retrieval, confidence decision, and risk explanation."
 llm_058,Support Question Data Audit,practice,"Guides practitioners through inspecting support questions, expected topics, difficulty labels, ambiguous cases, and unrelated questions."
 llm_059,Support Router Token Estimate,practice,Guides practitioners through estimating token count and cost for support questions plus retrieved lesson descriptions.
 llm_060,Support Router Retrieval Results,practice,"Guides practitioners through recording top-1 and top-3 lesson candidates, scores, and relevance notes."
