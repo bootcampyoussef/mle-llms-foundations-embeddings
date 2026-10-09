@@ -28,7 +28,7 @@ By the end of this repository, you should be able to:
 
 | File / Folder | Description |
 |---|---|
-| [**assets**](assets/) | Visual aids (diagrams, illustrations) referenced in the notebooks. |
+| [**assets**](assets/) | Visual aids referenced in the repository. |
 | [**data**](data/) | CSV datasets used across the notebooks for embedding and similarity exercises. |
 | [**pyproject.toml**](pyproject.toml) | Project configuration and dependencies. |
 | [**uv.lock**](uv.lock) | Dependency lock file. |
@@ -37,7 +37,7 @@ By the end of this repository, you should be able to:
 
 > [!NOTE]
 > Throughout these steps, text in angle brackets like `<repo-name>` is a
-  **placeholder**. Replace it including the `< >` brackets with your own
+  **placeholder**. Replace it, including the `< >` brackets, with your own
   value. For example, `cd <repo-name>` becomes `cd mle-llms-foundations-embeddings`.
 
 ### 1. Create the Repository from the Template
@@ -92,7 +92,7 @@ uv sync
 
 ---
 
-### 5. Open the Notebooks
+### 5. Open the Repository in VS Code
 
 > [!NOTE]
 > Make sure you open VS Code from the project root so it automatically detects the environment created by `uv sync`.
