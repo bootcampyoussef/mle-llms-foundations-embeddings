@@ -237,13 +237,8 @@ def relevant_in_top_k(
     """Check whether the labeled topic is represented in the first k candidates."""
     expected = expected_topic.lower().strip().replace("_", " ")
     for result in results[:k]:
-        searchable = (
-            " ".join(
-                [result.lesson_id, result.title, result.module, result.description]
-            )
-            .lower()
-            .replace("_", " ")
-        )
+        text = f"{result.lesson_id} {result.title} {result.module} {result.description}"
+        searchable = text.lower().replace("_", " ")
         if expected in searchable:
             return True
     return False
